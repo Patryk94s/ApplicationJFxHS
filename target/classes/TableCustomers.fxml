@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.stolarczyk.javafx.controllers.CustomersController">
+   <children>
+      <TableView fx:id="customers_table" layoutX="51.0" layoutY="50.0" prefHeight="316.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="Id_column" prefWidth="42.0" text="Id" />
+          <TableColumn fx:id="firstName_column" prefWidth="73.0" text="Firs Name" />
+            <TableColumn fx:id="lastName_column" prefWidth="85.0" text="LastName" />
+            <TableColumn fx:id="street_column" prefWidth="78.0" text="Street" />
+            <TableColumn fx:id="zipCode_column" prefWidth="72.0" text="Zip Code" />
+            <TableColumn fx:id="town_column" prefWidth="100.0" text="Town" />
+            <TableColumn fx:id="mobilePhone_column" prefWidth="89.0" text="Mobile Phone" />
+        </columns>
+      </TableView>
+      <Label layoutX="235.0" layoutY="6.0" text="Customers Table">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

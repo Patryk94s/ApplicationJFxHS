@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.stolarczyk.javafx.controllers.LoginController">
+   <children>
+      <Label fx:id="nameUserLab" layoutX="76.0" layoutY="62.0" text="User Name:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="passwordUserLab" layoutX="74.0" layoutY="142.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <PasswordField fx:id="pasField" layoutX="76.0" layoutY="172.0" promptText="Password" />
+      <TextField fx:id="logTextField" layoutX="76.0" layoutY="89.0" promptText="Login" />
+      <Button fx:id="logButton" layoutX="76.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: black;" text="SIGN IN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="statLab" layoutX="74.0" layoutY="263.0" prefHeight="17.0" prefWidth="332.0" />
+      <ImageView fitHeight="150.0" fitWidth="216.0" layoutX="296.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/LOGIN.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="21.0" text="--- ADMIN ---">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
